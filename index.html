@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+
+            animation-name: back;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+
+        }
+
+        .task1 {
+            background-image: linear-gradient(red, yellow, black);
+            font-size: 24px;
+            border: none;
+            padding: 10px;
+            color: white;
+            border-radius: 20px;
+
+            margin-right: 100px;
+        }
+
+        .task2 {
+            background-image: linear-gradient(rgb(236, 110, 110), rgb(219, 219, 40), black);
+            font-size: 24px;
+            border: none;
+            padding: 10px;
+            color: white;
+            border-radius: 20px;
+            margin-right: 100px;
+        }
+
+        .hand {
+            font-size: 50px;
+            color: rgb(179, 34, 34);
+            background-color: rgb(51, 49, 49);
+            border:none;
+            border-radius: 30px;
+            animation-name: hand;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+
+        }
+        button{
+            background-color: rgb(22, 15, 15);
+            border: none;
+        }
+        @keyframes hand {
+            to{
+                transform: translateX(-110px);
+            }
+            
+        }
+        .task1:focus-within,
+        .task2:focus-within {
+            box-shadow: 10px 10px 10px 10px rgb(2, 22, 29);
+        }
+
+        @keyframes back {
+            0% {
+                background-image: url('./3.png');
+                transition: 2s;
+            }
+
+            50% {
+                background-image: url('./2.jpg');
+            }
+
+            100% {
+                background-image: url('./12.jpg');
+
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <a href="./animation1.html"><button class="task1">Task1</button></a>
+    <a href="./animation2.html"><button class="task2">Task2</button></a>
+    <button><i class="fa-regular fa-hand-point-left hand"></i></button>
+</body>
+
+</html>

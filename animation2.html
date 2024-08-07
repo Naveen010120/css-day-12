@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>music</title>
+    <style>
+        body{
+            background-image: url('./images.jpg');
+            height: 100vh;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        main{
+            display: flex;
+            height: 25vw;
+            justify-content: center;
+            align-items: center;
+        }
+        .container1 , .container2{
+            width: 50vw;
+            height: 52vh;
+           
+            display: grid;
+            grid-template-areas: 'a a a a'
+                                'a a a a';
+            align-content: end;
+           
+        }
+        .container1 > nav{
+            height: 5vh;
+            width: 5vw;
+            background-color: black;
+            margin-bottom: 10px;
+           
+            animation-name: music;
+            animation-duration: 1s;
+            animation-delay: 2s;
+            animation-timing-function: ease-in-out; 
+            animation-iteration-count: infinite;
+            border-radius: 20px;
+        }
+        .container2>nav{
+            height: 5vh;
+            width: 5vw;
+            background-color: black;
+            margin-bottom: 10px;
+            animation-name: music2;
+            animation-duration: 2s;
+            animation-delay: 3s;
+            animation-timing-function: ease-in-out; 
+            animation-iteration-count: infinite;
+            border-radius: 20px;
+        }
+        @keyframes music {
+          
+            0%{
+                transform: translate(0px);
+               /* transform: translateY(-100px); */
+               height: 10px;
+               background-color: blue;
+               margin-left: 40px;
+
+            }
+            50%{
+                background-color: yellow;
+                margin-left: 40px;
+            }
+            100%{
+                background-color: red;
+                margin-left: 40px;
+            }
+        }
+        @keyframes music2 {
+           
+            0%{
+                transform: translateX(-580px);
+               /* transform: translateY(-100px); */
+               height: 15px;
+               background-color: blue;
+               margin-left: 42px;
+             
+            }
+            50%{
+                background-color: yellow;
+                transform: translateX(-580px);
+                margin-left: 42px;
+            }
+            100%{
+                background-color: red;
+                transform: translateX(-580px);
+                margin-left: 42px;
+            }
+        }
+        @media screen and (min-width:300px) and (max-width:800px){
+            .container1 > nav{
+            height: 5vh;
+            width: 5vw;
+            background-color: black;
+            margin-bottom: 10px;
+           
+            animation-name: music;
+            animation-duration: 1s;
+            animation-delay: 1s;
+            animation-timing-function: ease-in-out; 
+            animation-iteration-count: infinite;
+            border-radius: 20px;
+        }
+        .container2>nav{
+            height: 5vh;
+            width: 5vw;
+            background-color: black;
+            margin-bottom: 10px;
+           
+            animation-name: music2;
+            animation-duration: 2s;
+            animation-delay: 2s;
+            animation-timing-function: ease-in-out; 
+            animation-iteration-count: infinite;
+            border-radius: 20px;
+        }
+        @keyframes music {
+          
+            0%{
+                transform: translate(0px);
+               /* transform: translateY(-100px); */
+               height: 10px;
+               background-color: blue;
+               margin-left: 20px;
+
+            }
+            50%{
+                background-color: yellow;
+                margin-left: 20px;
+            }
+            100%{
+                background-color: red;
+                margin-left: 20px;
+            }
+        }
+        @keyframes music2 {
+           
+            0%{
+                transform: translateX(-135px);
+               /* transform: translateY(-100px); */
+               height: 15px;
+               background-color: blue;
+               margin-left: 22px;
+              
+            }
+            50%{
+                background-color: yellow;
+                transform: translateX(-135px);
+                margin-left: 22px;
+            }
+            100%{
+                background-color: red;
+                transform: translateX(-135px);
+                margin-left: 22px;
+            }
+        }
+        }
+        audio{
+          translate: 100px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+    <div class="container1">
+        <nav></nav>
+        <nav></nav>
+        <nav></nav>
+        <nav></nav>
+        <nav></nav>
+        <nav></nav>
+        <nav></nav>
+        <nav></nav>
+        <nav></nav>
+        <nav></nav>
+        <nav></nav>
+        <nav></nav>
+        <nav></nav>
+        <nav></nav>
+        <nav></nav>
+        <nav></nav>
+    </div>
+    <div class="container1">
+        <nav></nav>
+        <nav></nav>
+        <nav></nav>
+        <nav></nav>
+        <nav></nav>
+        <nav></nav>
+        <nav></nav>
+        <nav></nav>
+        <nav></nav>
+        <nav></nav>
+        <nav></nav>
+        <nav></nav>
+        <nav></nav>
+        <nav></nav>
+        <nav></nav>
+        <nav></nav>
+    </div>
+    <div class="container2">
+        <nav></nav>
+        <nav></nav>
+        <nav></nav>
+        <nav></nav>
+        <nav></nav>
+        <nav></nav>
+        <nav></nav>
+        <nav></nav>
+        <nav></nav>
+        <nav></nav>
+        <nav></nav>
+        <nav></nav>
+        <nav></nav>
+        <nav></nav>
+        <nav></nav>
+        <nav></nav>
+    </div>
+    <div class="container2">
+        <nav></nav>
+        <nav></nav>
+        <nav></nav>
+        <nav></nav>
+        <nav></nav>
+        <nav></nav>
+        <nav></nav>
+        <nav></nav>
+        <nav></nav>
+        <nav></nav>
+        <nav></nav>
+        <nav></nav>
+        <nav></nav>
+        <nav></nav>
+        <nav></nav>
+        <nav></nav>
+    </div>
+</main><br> <br><br>   <br> <br>
+<audio controls autoplay class="audio">
+    <source src="./[iSongs.info] 02 - Spirit Of Jersey.mp3">
+</audio>
+</body>
+</html>
